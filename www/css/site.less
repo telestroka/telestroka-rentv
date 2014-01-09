@@ -1,0 +1,116 @@
+@import "mixins.less";
+@import "reset.less";
+@import "classes.less";
+
+@blue-text: #438dcc;
+@orange-text: #db8e0a;
+@text-color: #626262;
+@text-size: 13px;
+@text-font: Arial, sans-serif;
+@site-background: #fff;
+@link-color: @blue-text;
+@link-visited-color: @blue-text;
+@link-hover-color: @orange-text;
+@container-width: 860px;
+
+a {color: @link-color; transition: color 2s;}
+a:hover {color: @link-hover-color; transition: color 0.5s;}
+body {
+  overflow-x: hidden;
+  color: @text-color;
+
+  header {
+	background-color: #438dcc;
+	padding: 30px 0 40px;
+
+	.container {
+	  margin: auto;
+	  max-width: @container-width;
+	  padding: 0 10px;
+
+	  img {display: block;}
+	  #logo {float: right;}
+	  #channel-logo {
+		max-width: 420px;
+		width: 50%;
+		margin: auto;
+	  }
+	  h1 {
+		display: block;
+		text-align: center;
+		color: #f4ef65;
+		font-size: 27px;
+		font-weight: normal;
+		text-shadow: 0 1px 0 #000;
+		margin-top: 40px;
+	  }
+	}
+  }
+
+  #top-panel {
+    background: #0072bc url(/i/top-panel-bg.gif) repeat-x;
+	height: 25px;
+  }
+  section {
+	margin: auto;
+	max-width: @container-width;
+	padding: 0 10px;
+
+	.floatleft {
+	  width: 50%;
+	}
+	.floatright {
+	  width: 30%;
+	}
+	h2 {
+	  font-size: 18px;
+	  font-weight: normal;
+	  color: @orange-text;
+	  margin: 90px 0 20px;
+	}
+
+	blockquote {
+	  margin: 0;
+	}
+	cite {
+	  display: block;
+	  text-align: right;
+	}
+	blockquote:before, blockquote:after {
+	  font-size: 74px;
+	  color: #b7b7b7;
+	}
+	blockquote:before {
+	  content: '«';
+	  float: left;
+	  margin: -28px 0 0 -60px;
+	}
+	blockquote:after {
+	  content: '»';
+	  float: right;
+	  margin: -80px -50px 0 0;
+	}
+
+	.large-link-list {
+	  font-size: 18px;
+
+	  a {
+		margin-right: 10px;
+	  }
+	}
+	.channels-image {
+	  margin: 60px -60px 0;
+
+	  img {
+		width: 100%;
+		max-width: 982px;
+	  }
+	}
+  }
+  footer {
+	margin: auto;
+	max-width: @container-width;
+	padding: 0 10px;
+  }
+  #counter {}
+}

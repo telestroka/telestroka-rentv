@@ -1,0 +1,9 @@
+[general]
+version = "1.0.0"
+title = "Рен ТВ Бегущая строка Прием размещение объявлений Сочи Омск Новосибирск Томск Барнаул Тюмень Сургут"
+owner = 
+admin = 
+timezone = "Asia/Novosibirsk"
+debug = 0
+
+[modules]

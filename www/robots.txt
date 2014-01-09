@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin
+Disallow: /ok
+Disallow: /404
+Host: ren-tv.telestroka.ru
